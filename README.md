@@ -6,6 +6,7 @@ Just download the files and run QuteFighters.exe
 24 mb is images, music and sound effects and the source codes. The rest of the data comes from the necessary dll's
 
 Download link: <a href="https://drive.google.com/file/d/1TYhBjXqaT_-u1Oeqp4WTBkDnwoTlsGq6/view?usp=sharing">Qute Fighters</a>
+
 Server's source code if you want to test its online feature (read more about it in the "Online Gameplay" section): <a href="https://github.com/ugurozdemir97/Qute-Fighters-Server">Qute Fighters Server</a> 
 
 ## Keys:
