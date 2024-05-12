@@ -7,7 +7,7 @@ Just download the files and run QuteFighters.exe
 
 Download link: <a href="https://drive.google.com/file/d/1TYhBjXqaT_-u1Oeqp4WTBkDnwoTlsGq6/view?usp=sharing">Qute Fighters</a>
 
-If you want to test its online feature (read more about it in the "Online Gameplay" section). You don't need to download this for the game to run locally.
+If you want to test its online feature (read more about it in the "Online Gameplay" section, you don't need to download this for the game to run locally). 
 
 Server's source code: <a href="https://github.com/ugurozdemir97/Qute-Fighters-Server">Qute Fighters Server</a> 
 
