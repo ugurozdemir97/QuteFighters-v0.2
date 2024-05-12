@@ -29,12 +29,16 @@ Player 2 uses:
   <li>"L" for heavy attack and deselection.</li>
   <li>"P" for blocking attacks.</li>
 </ul>  
+
+![Keys](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/f7b50624-bf49-4a98-9f6f-b1ba8dfcd2fe)
   
 ## Characters:
 Currently, there are two characters with identical movesets but different stats. The red character is faster but has less health. Here, I've duplicated those characters to test the character selection screen.
 
 ## Map:
 The map consists of three layers, each moving at different speeds depends on the characters' speed to create a 3D parallax effect. The bottom layer also skews and transforms to create perspective as the players move. Players can move until they reach the walls. The players can't move more further away from each other than the screen width even if they are not touching the walls so it will guarantee the characters will always be in the visible portion of the screen.
+
+![Map](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/a2d6d6c0-b316-448b-a92c-80631db1c818)
 
 ## Moves:
 In the future I may add special attacks for each character but the moveset logic will always be the same. There are six grounded and two aerial attacks. To perform these attacks, players must combine movement keys with attack keys, similar to the game "Brawlhalla".
@@ -44,9 +48,19 @@ The same pattern applies to heavy attacks (nH, sH, dH).
 Players can perform aerial light (aL) and aerial heavy (aH) attacks in the air.
 There is also blocking, which can be used while standing or crouching. Blocking does not prevent damage but reduces it.
 
+![Moves](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/b460bbf2-17ef-4e0b-9bce-78f3ecd48a46)
+
 ## Online Gameplay
 The game has an UDP server written in Node.js. If you run the server locally it's technically possible to play the game online but it has synchronization problems sometimes. I will address this in the future.
-After you run the server should you open the game you will see "Succesffully connected to the server" on the bottom right. If you click that button it will disconnect you, by clicking again you can connect back to the server. When you are connected, you can create rooms. Other players can join that room using the room number. In that room, you can chat with everyone who is in the room using the chat bar on the top. There will be only two players but there is no limit for spectators. Player 1 is the room leader and can start the game when both players select their character. 
+After you run the server should you open the game you will see "Succesffully connected to the server" on the bottom right. If you click that button it will disconnect you, by clicking again you can connect back to the server. When you are connected, you can create rooms. Other players can join that room using the room number. 
+
+![Join](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/ea0174ee-e628-4d8e-a4d5-92cca96e8694)
+
+In that room, you can chat with everyone who is in the room using the chat bar on the top. 
+
+![Chat](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/25b1a5ac-96e7-43a8-b6e1-cf9cf46fdfd9)
+
+There will be only two players but there is no limit for spectators. Player 1 is the room leader and can start the game when both players select their character. If you click your username in the main menu on the top right, you can change your username, other players will see your username when you are chatting or playing with them.
 
 ### Game Ends If:
 The game ends when a player’s health reaches zero or when time runs out. If time expires, the player with more health percentage wins. You can see both the timer and health bars on the screen when the game begins.
