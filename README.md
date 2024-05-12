@@ -46,7 +46,7 @@ There is also blocking, which can be used while standing or crouching. Blocking 
 
 ## Online Gameplay
 The game has an UDP server written in Node.js. If you run the server locally it's technically possible to play the game online but it has synchronization problems sometimes. I will address this in the future.
-After you run the server should you open the game you will see "Succesffully connected to the server" on the bottom right. If you click that button it will disconnect you, by clicking again you can connect back to the server. When you are connected, you can create rooms. Another players can join that room using the room number. In that room, you can chat with everyone who is in the room using the chat bar on the top. There will be only two players but there is no limit for spectators.
+After you run the server should you open the game you will see "Succesffully connected to the server" on the bottom right. If you click that button it will disconnect you, by clicking again you can connect back to the server. When you are connected, you can create rooms. Other players can join that room using the room number. In that room, you can chat with everyone who is in the room using the chat bar on the top. There will be only two players but there is no limit for spectators. Player 1 is the room leader and can start the game when both players select their character. 
 
 ### Game Ends If:
 The game ends when a player’s health reaches zero or when time runs out. If time expires, the player with more health percentage wins. You can see both the timer and health bars on the screen when the game begins.
