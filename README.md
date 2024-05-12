@@ -33,7 +33,7 @@ Player 2 uses:
 ![Key](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/10f65522-6019-45ad-b23e-5fa5ba4acc44)
   
 ## Characters:
-Currently, there are two characters with identical movesets but different stats. The red character is faster but has less health. Here, I've duplicated those characters to test the character selection screen.
+Currently, there are two characters with identical movesets but different stats. The red character is faster but has less health.
 
 ## Map:
 The map consists of three layers, each moving at different speeds depends on the characters' speed to create a 3D parallax effect. The bottom layer also skews and transforms to create perspective as the players move. Players can move until they reach the walls. The players can't move more further away from each other than the screen width even if they are not touching the walls so it will guarantee the characters will always be in the visible portion of the screen.
@@ -51,8 +51,7 @@ There is also blocking, which can be used while standing or crouching. Blocking 
 ![Moves](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/23b76571-8500-4c7a-b13e-e60708da10b3)
 
 ## Online Gameplay
-The game has an UDP server written in Node.js. If you run the server locally it's technically possible to play the game online but it has synchronization problems sometimes. I will address this in the future.
-After you run the server should you open the game you will see "Succesffully connected to the server" on the bottom right. If you click that button it will disconnect you, by clicking again you can connect back to the server. When you are connected, you can create rooms. Other players can join that room using the room number. 
+The game has an UDP server written in Node.js. If you run the server locally it's technically possible to play the game online but it has synchronization problems sometimes. I will address this in the future. After you run the server and open the game, you should see ‘Successfully connected to the server’ at the bottom right. If you click that button it will disconnect you, by clicking again you can connect back to the server. When you are connected, you can create rooms. Other players can join that room using the room number. 
 
 ![Join](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/867396b9-4a09-49e8-8458-25f15f8f842a)
 
