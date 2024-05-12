@@ -6,6 +6,7 @@ Just download the files and run QuteFighters.exe
 24 mb is images, music and sound effects and the source codes. The rest of the data comes from the necessary dll's
 
 Download link: <a href="https://drive.google.com/file/d/1TYhBjXqaT_-u1Oeqp4WTBkDnwoTlsGq6/view?usp=sharing">Qute Fighters</a>
+Server's source code if you want to test its online feature (read more about it in the "Online Gameplay" section): <a href="https://github.com/ugurozdemir97/Qute-Fighters-Server">Qute Fighters Server</a> 
 
 ## Keys:
 You can change key bindings of both players from How To Play section. In default:
@@ -41,11 +42,8 @@ Players can perform aerial light (aL) and aerial heavy (aH) attacks in the air.
 There is also blocking, which can be used while standing or crouching. Blocking does not prevent damage but reduces it.
 
 ## Online Gameplay
-The game has an UDP server written in Node.js. If you run the server locally it's technically possible to play the game online but it sometimes has synchronization problems. I will address this in the future.
-
-The server's source code: <a href"">Qute Fighters Server<\a>
-
-After you run the server should you open the game you will see "Succesffully connected to the server" on the bottom right. If you click that button it will disconnect you, by clicking again you can connect back to the server. When you are connected, you can create rooms. Another player can join that room using the room number. In that room, you can chat with everyone who is in the room. There will be only two players but there is no limit for spectators.
+The game has an UDP server written in Node.js. If you run the server locally it's technically possible to play the game online but it has synchronization problems sometimes. I will address this in the future.
+After you run the server should you open the game you will see "Succesffully connected to the server" on the bottom right. If you click that button it will disconnect you, by clicking again you can connect back to the server. When you are connected, you can create rooms. Another players can join that room using the room number. In that room, you can chat with everyone who is in the room using the chat bar on the top. There will be only two players but there is no limit for spectators.
 
 ### Game Ends If:
 The game ends when a player’s health reaches zero or when time runs out. If time expires, the player with more health percentage wins. You can see both the timer and health bars on the screen when the game begins.
