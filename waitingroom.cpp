@@ -26,10 +26,8 @@ void MainWindow::waitingRoom(bool player1, bool player2) {
 
     // Create selection class
     this->selection = new Selection(this->scale, this->currentRoom, this);
-    this->selection->createSelector(player1, player2);  // Create 1, 2 or 0 selectors 
-    this->selectionView->setScene(this->selection);  // Set view
-
-    // Connections
+    this->selection->createSelector(player1, player2);  // Create 1, 2 or 0 selectors
+    this->selectionView->setScene(this->selection);     // Set view
     connect(this->selection, &Selection::charactersReady, this, &MainWindow::activateStartButton);
 
     ui->pages->setCurrentIndex(2);
@@ -39,13 +37,9 @@ void MainWindow::waitingRoom(bool player1, bool player2) {
 // Reset everything
 void MainWindow::exitWaitingRoom() {
 
-    this->exitRoom();
+    this->exitRoom();  // If you are in a room, leave room
+    ui->pages->setCurrentIndex(0);
 
-    // There will be problems in resizing the scene and its items if: you are in a room, resize the window, leave and enter back
-    // This line prevents it
-    this->selectionView->setTransform(QTransform::fromScale(1, 1));
-
-    this->selectionView->hide();
     this->openChatButton->hide();
     this->openChatButton->setChecked(false);
     this->exitRoomButton->hide();
@@ -59,7 +53,10 @@ void MainWindow::exitWaitingRoom() {
     this->playerStatus = false;
     this->currentRoom = 0;
 
-    ui->pages->setCurrentIndex(0);
+    // There will be problems in resizing the scene and its items if: you are in a room, resize the window, leave and enter back
+    // This line prevents it
+    this->selectionView->setTransform(QTransform::fromScale(1, 1));
+    this->selectionView->hide();
 
     delete this->selection;
     this->selection = nullptr;
