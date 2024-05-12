@@ -5,7 +5,7 @@ QuteFighters is a 2D fighting game that allows two players to play locally or on
 Just download the files and run QuteFighters.exe
 24 mb is images, music and sound effects and the source codes. The rest of the data comes from the necessary dll's
 
-Download link: <a href="https://drive.google.com/file/d/1TYhBjXqaT_-u1Oeqp4WTBkDnwoTlsGq6/view?usp=sharing">Qute Fighters</a>
+Download link: <a href="https://drive.google.com/file/d/1b0k6kSXr2B9gMp1BpQbtFE4w8c1IBZUX/view?usp=sharing">Qute Fighters</a>
 
 If you want to test its online feature (read more about it in the "Online Gameplay" section, you don't need to download this for the game to run locally). 
 
