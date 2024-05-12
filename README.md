@@ -61,5 +61,9 @@ In that room, you can chat with everyone who is in the room using the chat bar o
 
 There will be only two players but there is no limit for spectators. Player 1 is the room leader and can start the game when both players select their character. If you click your username in the main menu on the top right, you can change your username, other players will see your username when you are chatting or playing with them.
 
+Here is two players playing online.
+
+![OnlinePlay](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/b70d3e77-6f56-4411-ac9e-ef843da1e60f)
+
 ### Game Ends If:
 The game ends when a player’s health reaches zero or when time runs out. If time expires, the player with more health percentage wins. You can see both the timer and health bars on the screen when the game begins.
