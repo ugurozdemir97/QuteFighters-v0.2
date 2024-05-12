@@ -30,7 +30,7 @@ Player 2 uses:
   <li>"P" for blocking attacks.</li>
 </ul>  
 
-![Keys](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/f7b50624-bf49-4a98-9f6f-b1ba8dfcd2fe)
+![Key](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/10f65522-6019-45ad-b23e-5fa5ba4acc44)
   
 ## Characters:
 Currently, there are two characters with identical movesets but different stats. The red character is faster but has less health. Here, I've duplicated those characters to test the character selection screen.
@@ -38,7 +38,7 @@ Currently, there are two characters with identical movesets but different stats.
 ## Map:
 The map consists of three layers, each moving at different speeds depends on the characters' speed to create a 3D parallax effect. The bottom layer also skews and transforms to create perspective as the players move. Players can move until they reach the walls. The players can't move more further away from each other than the screen width even if they are not touching the walls so it will guarantee the characters will always be in the visible portion of the screen.
 
-![Map](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/a2d6d6c0-b316-448b-a92c-80631db1c818)
+![Map](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/56c1f941-ad58-4e0e-a073-53367405d526)
 
 ## Moves:
 In the future I may add special attacks for each character but the moveset logic will always be the same. There are six grounded and two aerial attacks. To perform these attacks, players must combine movement keys with attack keys, similar to the game "Brawlhalla".
@@ -48,17 +48,17 @@ The same pattern applies to heavy attacks (nH, sH, dH).
 Players can perform aerial light (aL) and aerial heavy (aH) attacks in the air.
 There is also blocking, which can be used while standing or crouching. Blocking does not prevent damage but reduces it.
 
-![Moves](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/b460bbf2-17ef-4e0b-9bce-78f3ecd48a46)
+![Moves](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/23b76571-8500-4c7a-b13e-e60708da10b3)
 
 ## Online Gameplay
 The game has an UDP server written in Node.js. If you run the server locally it's technically possible to play the game online but it has synchronization problems sometimes. I will address this in the future.
 After you run the server should you open the game you will see "Succesffully connected to the server" on the bottom right. If you click that button it will disconnect you, by clicking again you can connect back to the server. When you are connected, you can create rooms. Other players can join that room using the room number. 
 
-![Join](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/ea0174ee-e628-4d8e-a4d5-92cca96e8694)
+![Join](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/867396b9-4a09-49e8-8458-25f15f8f842a)
 
 In that room, you can chat with everyone who is in the room using the chat bar on the top. 
 
-![Chat](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/25b1a5ac-96e7-43a8-b6e1-cf9cf46fdfd9)
+![Chat](https://github.com/ugurozdemir97/QuteFighters-v0.2/assets/64408736/56e6073c-6231-4b75-a1e9-6ba033e0afcb)
 
 There will be only two players but there is no limit for spectators. Player 1 is the room leader and can start the game when both players select their character. If you click your username in the main menu on the top right, you can change your username, other players will see your username when you are chatting or playing with them.
 
