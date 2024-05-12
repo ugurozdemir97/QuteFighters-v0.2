@@ -7,7 +7,9 @@ Just download the files and run QuteFighters.exe
 
 Download link: <a href="https://drive.google.com/file/d/1TYhBjXqaT_-u1Oeqp4WTBkDnwoTlsGq6/view?usp=sharing">Qute Fighters</a>
 
-Server's source code if you want to test its online feature (read more about it in the "Online Gameplay" section): <a href="https://github.com/ugurozdemir97/Qute-Fighters-Server">Qute Fighters Server</a> 
+If you want to test its online feature (read more about it in the "Online Gameplay" section). You don't need to download this for the game to run locally.
+
+Server's source code: <a href="https://github.com/ugurozdemir97/Qute-Fighters-Server">Qute Fighters Server</a> 
 
 ## Keys:
 You can change key bindings of both players from How To Play section. In default:
