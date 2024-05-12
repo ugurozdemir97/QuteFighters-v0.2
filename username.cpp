@@ -17,6 +17,8 @@ void Username::keyPressEvent(QKeyEvent *event) {
     if (event->key() == Qt::Key_Escape) {
         emit hideOverlay();
         this->close();
+    } else if (event->key() == Qt::Key_Return) {
+        ui->enterButton->click();
     }
 }
 
