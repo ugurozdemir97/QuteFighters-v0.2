@@ -1,0 +1,49 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/UI/Go back1.png</file>
+        <file>Images/UI/Go back2.png</file>
+        <file>Images/UI/Main.png</file>
+        <file>Images/UI/Music.png</file>
+        <file>Images/UI/Parchment.png</file>
+        <file>Images/UI/Sound Bar.png</file>
+        <file>Images/UI/Sound.png</file>
+        <file>Images/UI/Keys.png</file>
+        <file>Data/Characters.json</file>
+        <file>Music/Fight/Shamisen Samurai Rock.mp3</file>
+        <file>Music/Menu/Tiger.mp3</file>
+        <file>Sound/Miora/dH.wav</file>
+        <file>Sound/Miora/dL.wav</file>
+        <file>Sound/Miora/hit.wav</file>
+        <file>Sound/Miora/jump.wav</file>
+        <file>Sound/Miora/aH.wav</file>
+        <file>Sound/Miora/aL.wav</file>
+        <file>Sound/Miora/nH.wav</file>
+        <file>Sound/Miora/nL.wav</file>
+        <file>Sound/Miora/sH.wav</file>
+        <file>Sound/Miora/sL.wav</file>
+        <file>Font/Karate.ttf</file>
+        <file>Images/UI/Button.png</file>
+        <file>Images/UI/ButtonHover.png</file>
+        <file>Images/Selection/Selection.png</file>
+        <file>Images/UI/ButtonDisabled.png</file>
+        <file>Images/Selection/ChatArea.png</file>
+        <file>Images/Selection/ChatBar.png</file>
+        <file>Images/Characters/Miora/Avatar.png</file>
+        <file>Images/Characters/Miora/Shadows.png</file>
+        <file>Images/Characters/Miora/Sprites.png</file>
+        <file>Images/Characters/Miora/Waiting.png</file>
+        <file>Images/Characters/Oni/Avatar.png</file>
+        <file>Images/Characters/Oni/Sprites.png</file>
+        <file>Images/Characters/Oni/Waiting.png</file>
+        <file>Images/Selection/Selector1.png</file>
+        <file>Images/Selection/Selector2.png</file>
+        <file>Images/Game/1.png</file>
+        <file>Images/Game/2.png</file>
+        <file>Images/Game/3.png</file>
+        <file>Images/Game/HealthBar.png</file>
+        <file>Images/UI/Close.png</file>
+        <file>Images/UI/Sound Bar2.png</file>
+        <file>Images/UI/icon.ico</file>
+        <file>Images/UI/Screen.png</file>
+    </qresource>
+</RCC>

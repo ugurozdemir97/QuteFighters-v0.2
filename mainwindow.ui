@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>225</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>6000</width>
+    <height>3375</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Qute Fighters</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="pages">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QWidget" name="mainPage">
+       <property name="styleSheet">
+        <string notr="true">QWidget#mainPage {border-image: url(:/Images/UI/Main.png);}
+</string>
+       </property>
+       <widget class="QPushButton" name="playButton">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>340</y>
+          <width>80</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Karate</family>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#playButton {
+	border-image: url(:/Images/UI/Button.png);
+	font-family: 'Karate';
+	color: rgb(218, 248, 147);
+}
+
+QPushButton#playButton:hover {border-image: url(:/Images/UI/ButtonHover.png);}
+</string>
+        </property>
+        <property name="text">
+         <string>Play</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="aboutButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>345</y>
+          <width>70</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Karate</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#aboutButton {
+	border-image: url(:/Images/UI/Button.png);
+	font-family: 'Karate';
+	color: rgb(218, 248, 147);
+}
+QPushButton#aboutButton:hover {border-image: url(:/Images/UI/ButtonHover.png);}
+</string>
+        </property>
+        <property name="text">
+         <string>About</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="howToButton">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>345</y>
+          <width>70</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Karate</family>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#howToButton {
+	border-image: url(:/Images/UI/Button.png);
+	font-family: 'Karate';
+	color: rgb(218, 248, 147);
+}
+QPushButton#howToButton:hover {border-image: url(:/Images/UI/ButtonHover.png);}
+
+</string>
+        </property>
+        <property name="text">
+         <string>How
+To
+Play</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="musicButton">
+        <property name="geometry">
+         <rect>
+          <x>366</x>
+          <y>140</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#musicButton {
+	border-image: url(:/Images/UI/Music.png);
+	border-radius: 5px;
+}
+QPushButton#musicButton:hover {background-color: rgba(34, 255, 0, 0.2);}
+QPushButton#musicButton:pressed {background-color: rgba(34, 255, 0, 0.3);}
+QPushButton#musicButton:checked {background-color: rgba(34, 255, 0, 0.3);}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="soundButton">
+        <property name="geometry">
+         <rect>
+          <x>416</x>
+          <y>140</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#soundButton {
+	border-image: url(:/Images/UI/Sound.png);
+	border-radius: 5px;
+}
+QPushButton#soundButton:hover {background-color: rgba(34, 255, 0, 0.2);}
+QPushButton#soundButton:pressed {background-color: rgba(34, 255, 0, 0.3);}
+QPushButton#soundButton:checked {background-color: rgba(34, 255, 0, 0.3);}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="soundBarLabel">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>0</y>
+          <width>281</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/Images/UI/Sound Bar.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QSlider" name="soundBar">
+        <property name="geometry">
+         <rect>
+          <x>276</x>
+          <y>254</y>
+          <width>248</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QSlider#soundBar::groove:horizontal {background: transparent;}
+QSlider#soundBar::handle:horizontal {background-color: rgba(255, 255, 255, 0);}
+QSlider#soundBar::sub-page:horizontal {background-color: rgba(255, 150, 0, 0.65);}</string>
+        </property>
+        <property name="minimum">
+         <number>0</number>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+        <property name="singleStep">
+         <number>0</number>
+        </property>
+        <property name="pageStep">
+         <number>10</number>
+        </property>
+        <property name="value">
+         <number>99</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="localButton">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>340</y>
+          <width>80</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Karate</family>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#localButton {
+	border-image: url(:/Images/UI/Button.png);
+	font-family: 'Karate';
+	color: rgb(218, 248, 147);
+}
+QPushButton#localButton:hover {border-image: url(:/Images/UI/ButtonHover.png);}
+</string>
+        </property>
+        <property name="text">
+         <string>Local</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="joinButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>345</y>
+          <width>70</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Karate</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#joinButton {
+	border-image: url(:/Images/UI/Button.png);
+	font-family: 'Karate';
+	color: rgb(218, 248, 147);
+}
+QPushButton#joinButton:hover {border-image: url(:/Images/UI/ButtonHover.png);}
+</string>
+        </property>
+        <property name="text">
+         <string>Join</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="createButton">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>345</y>
+          <width>70</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Karate</family>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#createButton {
+	border-image: url(:/Images/UI/Button.png);
+	font-family: 'Karate';
+	color: rgb(218, 248, 147);
+}
+QPushButton#createButton:hover {border-image: url(:/Images/UI/ButtonHover.png);}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Create</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="backButton2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#backButton2 {border-image: url(:/Images/UI/Go back1.png);}
+QPushButton#backButton2:hover {border-image: url(:/Images/UI/Go back2.png);}
+
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="connectButton">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>430</y>
+          <width>10</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#connectButton {
+    border: none;
+	border-radius: 5px;
+    background: qradialgradient(
+        cx: 0.5, cy: 0.5, radius: 1,
+        fx: 0.5, fy: 0.5,
+        stop: 0 #ff0000, stop: 1 #780000);
+}
+
+QPushButton#connectButton:hover {
+    background: qradialgradient(
+        cx: 0.5, cy: 0.5, radius: 1,
+        fx: 0.5, fy: 0.5,
+        stop: 0 #ff0000, stop: 1 #420000);
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="connectionInfoLabel">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>424</y>
+          <width>210</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="usernameButton">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>5</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: white;
+	border-radius: 10px;
+	text-align: right;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Username</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="closeButton">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>98</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#closeButton {border-image: url(:/Images/UI/Close.png);}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="screenButton">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>100</y>
+          <width>18</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#screenButton {border-image: url(:/Images/UI/Screen.png);}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <zorder>soundBarLabel</zorder>
+       <zorder>createButton</zorder>
+       <zorder>joinButton</zorder>
+       <zorder>localButton</zorder>
+       <zorder>playButton</zorder>
+       <zorder>aboutButton</zorder>
+       <zorder>howToButton</zorder>
+       <zorder>soundBar</zorder>
+       <zorder>backButton2</zorder>
+       <zorder>connectButton</zorder>
+       <zorder>connectionInfoLabel</zorder>
+       <zorder>usernameButton</zorder>
+       <zorder>soundButton</zorder>
+       <zorder>musicButton</zorder>
+       <zorder>closeButton</zorder>
+       <zorder>screenButton</zorder>
+      </widget>
+      <widget class="QWidget" name="aboutPage">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <widget class="QPushButton" name="backButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#backButton {border-image: url(:/Images/UI/Go back1.png);}
+QPushButton#backButton:hover {border-image: url(:/Images/UI/Go back2.png);}
+
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="aboutLabel1">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>190</y>
+          <width>521</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>This game is written by Uğur Özdemir.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="aboutLabel2">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>220</y>
+          <width>521</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>The game is written in Qt 6.6.3 in C++ and the server runs on Node.js
+All the backgrounds and animations are drawn in Adobe Photoshop</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="aboutLabel3">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>190</y>
+          <width>510</width>
+          <height>110</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>You have 6 grounded and 2 aerial attacks. To perform these attacks,
+ you must combine your movement with your attacks. 
+You can block your opponent's attacks; 
+while blocking doesn't prevent damage entirely, it does reduce it.
+Be mindful of your health and the amount of time you spend in combat!</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="changeKeysButton">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>360</y>
+          <width>180</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Karate</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: rgb(94, 44, 17);
+	font-family: 'Karate';
+	border-radius: 10px;
+}
+
+QPushButton:hover {
+	background-color: rgba(102, 32, 0, 0.3);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Change Keys</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="selectionPage">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="gamePage">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
