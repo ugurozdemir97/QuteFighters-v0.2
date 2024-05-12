@@ -61,7 +61,11 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
         case 2:
 
             if (this->chatArea->isVisible()) {
-                if (event->key() == 16777220) this->sendMessage();
+                if (event->key() == Qt::Key_Return) this->sendMessage();
+                if (event->key() == Qt::Key_Escape) {
+                    this->openChatButton->setChecked(false);
+                    this->showChatArea();
+                }
                 return;
             }
 
@@ -124,23 +128,29 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
                         }
                         break;
                     case LA:
-                        if (this->currentRoom == 0) this->selection->selectCharacter1();
-                        else {
-                            if (this->selection->currentPlayerNumber == 1) {
-                                this->selection->selectCharacter1();
-                                this->characterChange();
-                            }
+                        if (this->selection->readyPlayer1 && this->selection->readyPlayer2) {
+                            this->sendGameStart();
+                        } else {
+                            if (this->currentRoom == 0) this->selection->selectCharacter1();
                             else {
-                                this->selection->selectCharacter2();
-                                this->characterChange();
+                                if (this->selection->currentPlayerNumber == 1) {
+                                    this->selection->selectCharacter1();
+                                    this->characterChange();
+                                }
+                                else {
+                                    this->selection->selectCharacter2();
+                                    this->characterChange();
+                                }
                             }
                         }
                         break;
                     case HA:
-
                         if (this->currentRoom == 0) {
                             if (this->selection->readyPlayer1) this->selection->deselectCharacter1();
-                            else this->exitWaitingRoom();
+                            else {
+                                this->exitWaitingRoom();
+                                return;
+                            }
                         } else {
                             if (this->selection->currentPlayerNumber == 1) {
                                 if (this->selection->readyPlayer1) {
@@ -163,9 +173,40 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
                     default:
                         break;
                 }
+
+                if (event->key() == Qt::Key_Escape) {
+                    if (this->currentRoom == 0) {
+                        if (this->selection->readyPlayer1) this->selection->deselectCharacter1();
+                        else {
+                            this->exitWaitingRoom();
+                            return;
+                        }
+                    } else {
+                        if (this->selection->currentPlayerNumber == 1) {
+                            if (this->selection->readyPlayer1) {
+                                this->selection->deselectCharacter1();
+                                this->characterChange();
+                            } else {
+                                this->selection->deleteSelector();  // We became a sectator
+                                this->leaveGame();
+                            }
+                        } else {
+                            if (this->selection->readyPlayer2) {
+                                this->selection->deselectCharacter2();
+                                this->characterChange();
+                            } else {
+                                this->selection->deleteSelector();  // We became a sectator
+                                this->leaveGame();
+                            }
+                        }
+                    }
+                } else if (event->key() == Qt::Key_Return) {
+                    if (this->selection->readyPlayer1 && this->selection->readyPlayer2) this->sendGameStart();
+                }
+
             } else {
                 // If we are a spectator, exit room and notify the server
-                if (this->player1Methods[event->key()] == HA) {
+                if (this->player1Methods[event->key()] == HA || event->key() == Qt::Key_Escape) {
                     this->exitWaitingRoom();
                     return;
                 } else if (this->player1Methods[event->key()] == LA) {
@@ -204,9 +245,14 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
             }
 
             break;
-        case 0:
-            break;
         case 1:
+            if (event->key() == Qt::Key_Escape) this->backToMain();
+            break;
+        case 0:
+            if (event->key() == Qt::Key_Escape) {
+                if (ui->playButton->isVisible()) this->close();
+                else this->hidePlayPage();
+            }
             break;
         default:
             break;
